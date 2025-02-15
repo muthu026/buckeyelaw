@@ -22,11 +22,6 @@ $bgimage = get_field('banner_image', 'term_' . $term_id);
 </div>
 <?php endif; ?>
 
-<div class="container-fluid py-4 site--content position-relative gap-3 d-flex justify-content-center flex-wrap">
-    <a href="tel:1-800-411-7246" class="btn btn-primary py-3 px-4">Call for a free consultation</a>
-    <a href="<?php echo site_url( ); ?>/#ContactUs" class="btn btn-primary py-3 px-4">Request a free consultation</a>
-</div>
-
 
 <div class="container-fluid pt-5 mt-3 site--content">
     <div class="row">
@@ -79,11 +74,11 @@ $bgimage = get_field('banner_image', 'term_' . $term_id);
 
             ?>
 
-            <div class="col d-flex flex-column flex-md-row py-5 ps-lg-5">
-                <div class="member--image mw-100 mw-sm-0 ps-lg-5">
+            <div class="col d-flex py-5 ps-lg-5">
+                <div class="member--image ps-lg-5">
                     <img src="<?php the_field('main_image'); ?>" alt="<?php the_field('name'); ?>">
                 </div>
-                <div class="memeber--details d-flex flex-column mw-100 mw-sm-0 justify-content-center">
+                <div class="memeber--details d-flex flex-column justify-content-center">
                     <h2><?php the_field('name'); ?></h2>
                     <h4 class="heading-highlight"><?php the_field('position'); ?></h4>
                     <a class="bg-primary text-white px-5 py-3 special--btn text-uppercase text-decoration-none mt-4"

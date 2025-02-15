@@ -14,11 +14,6 @@ $query = new WP_Query($args); ?>
     <h1 class="text-center mx-auto py-5 text-white position-relative">Blog</h1>
 </div>
 
-<div class="container-fluid py-4 site--content position-relative gap-3 d-flex justify-content-center flex-wrap">
-    <a href="tel:1-800-411-7246" class="btn btn-primary py-3 px-4">Call for a free consultation</a>
-    <a href="<?php echo site_url( ); ?>/#ContactUs" class="btn btn-primary py-3 px-4">Request a free consultation</a>
-</div>
-
 <div class="container py-5 my-5 px-5 site--content post-secton">
     <div id="posts_grid" class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
         <?php  if ($query->have_posts()) {

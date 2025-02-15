@@ -30,8 +30,7 @@ if($bottomSection) {
  }
  $args = array(
      'post_type'  => 'loc-practice-area',  
-    //  'post_parent__not_in' => array(0),
-     'post_parent'    => $post->ID,
+     'post_parent__not_in' => array(0),
      'meta_query' => array(
          array(
              'key'     => 'location_track',
@@ -61,11 +60,6 @@ if($bottomSection) {
     <h1 class="text-center mx-auto py-5 text-white position-relative"><?php the_field('banner_title'); ?></h1>
 </div>
 <?php endif; ?>
-
-<div class="container-fluid py-4 site--content position-relative gap-3 d-flex justify-content-center flex-wrap">
-    <a href="tel:1-800-411-7246" class="btn btn-primary py-3 px-4">Call for a free consultation</a>
-    <a href="<?php echo site_url( ); ?>/#ContactUs" class="btn btn-primary py-3 px-4">Request a free consultation</a>
-</div>
 
 
 <!-- grid box system -->

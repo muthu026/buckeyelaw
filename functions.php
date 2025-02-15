@@ -423,4 +423,3 @@ $query = new WP_Query($args); ?>
     </div>
 </div>
 <?php  } wp_reset_postdata();  } wp_die( ); }
-

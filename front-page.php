@@ -12,8 +12,8 @@ get_header(); ?>
     <div class="container">
         <div class="row">
             <div class="col-md-2"></div>
-            <div id="ContactUs" class="col-md-8 position-relative">
-                <?php echo do_shortcode('[gravityform id="1" title="true" description="true"]'); ?>
+            <div class="col-md-8 position-relative">
+                <?php echo do_shortcode('[gravityform id="1" title="true" description="false"]'); ?>
             </div>
             <div class="col-md-2"></div>
         </div>
