@@ -20,11 +20,6 @@ get_header();
 </div>
 <?php endif; ?>
 
-<div class="container-fluid py-4 site--content position-relative gap-3 d-flex justify-content-center flex-wrap">
-    <a href="tel:1-800-411-7246" class="btn btn-primary py-3 px-4">Call for a free consultation</a>
-    <a href="<?php echo site_url( ); ?>/#ContactUs" class="btn btn-primary py-3 px-4">Request a free consultation</a>
-</div>
-
 <div class="container-fluid py-5 mt-4 site--content">
     <div class="row">
         <div class="col-lg-8 site--description pe-lg-5">

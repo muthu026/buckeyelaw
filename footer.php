@@ -96,7 +96,6 @@ $bgimage = get_field('footer_top_bg_image', 'option');
                 <p class="copy-right pt-5 d-none d-xl-block text-white">
                     © <?php echo date('Y'); ?> All Rights Reserved | The Buckeye Law Group Inc.
                     <a href="/privacy-policy">Privacy Policy</a>
-					<a href="/sitemap_index.xml">Sitemap</a>
                 </p>
 
             </div>
@@ -240,7 +239,6 @@ $bgimage = get_field('footer_top_bg_image', 'option');
                 <p class="copy-right pt-5 text-white">
                     © <?php echo date('Y'); ?> All Rights Reserved | The Buckeye Law Group Inc.
                     <a href="/privacy-policy">Privacy Policy</a>
-					<a href="/sitemap_index.xml">Sitemap</a>
                 </p>
             </div>
 

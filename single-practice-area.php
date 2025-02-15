@@ -27,11 +27,6 @@ if($bottomSection) {
 </div>
 <?php endif; ?>
 
-<div class="container-fluid py-4 site--content position-relative gap-3 d-flex justify-content-center flex-wrap">
-    <a href="tel:1-800-411-7246" class="btn btn-primary py-3 px-4">Call for a free consultation</a>
-    <a href="<?php echo site_url( ); ?>/#ContactUs" class="btn btn-primary py-3 px-4">Request a free consultation</a>
-</div>
-
 <?php if(get_field('highlight_heading')) : ?>
 <div class="container-fluid py-5 site--content">
     <div class="row">
