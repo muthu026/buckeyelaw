@@ -1,0 +1,27 @@
+/* Here you can write Own Style */
+
+.page-id-171 .accordion-body {
+  background: #fff !important;
+}
+
+.page-id-171 .accordion-button {
+  text-transform: uppercase;
+  font-family: 'Playfair Display SC' !important;
+}
+
+.home #column_block_0b8ecc89ddab0c43e8804c73e837ec33 {
+  margin-bottom: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.home #column_block_d40855f35f8e084a46fae383ff63f9ba {
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+}
+
+@media (max-width: 840px) {
+  .post-type-archive-location .site--content h2,
+  .post-type-archive-location .site--content h2 + p {
+    width: 100% !important;
+  }
+}

@@ -1,0 +1,89 @@
+.gform-theme--foundation {
+  background: rgba(28, 28, 28, 1);
+  padding: 40px;
+  color: #fff;
+  .gform_heading {
+    .gform_title {
+      font-size: 30px;
+      font-weight: 700;
+      text-align: center;
+      line-height: 1.5;
+      padding-bottom: 20px;
+    }
+  }
+  .gform_required_legend {
+    display: none;
+  }
+  #gform_fields_1 {
+    grid-row-gap: 10px !important;
+
+    .gfield_required_asterisk {
+      color: $white;
+    }
+    legend,
+    label {
+      color: #fff !important;
+    }
+    .has_first_name {
+      flex-flow: column !important;
+    }
+    input:not([type='checkbox']) {
+      min-height: 42px !important;
+      border-radius: 0px !important;
+    }
+    span.name_first {
+      max-width: 122px;
+    }
+    span.name_last {
+      max-width: 170px;
+    }
+  }
+  #gform_submit_button_1 {
+    background: $primary !important;
+    font-size: 120%;
+    padding: 15px;
+    border-radius: 0;
+    width: 100%;
+    margin: 10px auto 0;
+    &:hover {
+      background: $black !important;
+    }
+  }
+}
+
+.contact--form {
+  background-attachment: fixed;
+  background-size: cover;
+  width: auto;
+  max-width: 100%;
+  margin: 0;
+  padding: 68px 0;
+  min-width: 0;
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  background-image: url('../images/courthouse-1920w.jpg');
+  &::before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: ' ';
+    border-radius: inherit;
+    background-color: #000;
+    opacity: 0.84;
+  }
+  .gform-theme--foundation {
+    background: transparent;
+    #gform_fields_1 .has_first_name {
+      flex-flow: row !important;
+    }
+    span.name_first {
+      max-width: 122px;
+    }
+    span.name_last {
+      max-width: 170px;
+    }
+  }
+}

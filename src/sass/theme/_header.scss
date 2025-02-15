@@ -1,0 +1,269 @@
+header {
+  .top-header-section {
+    .container-fluid {
+      // padding: 0 6rem 0 8rem;
+      max-width: calc(100% - 200px);
+      margin: 0 auto;
+      @include media-breakpoint-down(lg) {
+        padding: 0 2rem;
+        max-width: 100%;
+      }
+      .header-top-left {
+        text-transform: uppercase;
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+        font-family: 'Lato', sans-serif;
+      }
+      .header-top-right {
+        a {
+          text-transform: uppercase;
+          color: rgb(255, 255, 255);
+          font-weight: 700;
+          font-family: 'Lato', sans-serif;
+          padding-right: 12px;
+          font-size: 18px;
+        }
+        svg {
+          max-width: 40px;
+          color: rgba(190, 0, 9, 1);
+          fill: rgba(190, 0, 9, 1);
+        }
+      }
+    }
+  }
+
+  //Navigation
+  nav#main-nav {
+    .header-nav {
+      max-width: calc(100% - 200px);
+      margin: 0 auto;
+      // padding: 0 8rem;
+      @include media-breakpoint-down(lg) {
+        padding: 0 2rem;
+        max-width: 100%;
+      }
+    }
+    .custom-logo-link {
+      width: 25%;
+      margin: 0;
+      padding-right: 25px;
+      img {
+        max-width: 222px;
+        width: 100%;
+      }
+    }
+
+    #navbarNavDropdown {
+      // First ul:
+      ul {
+        li {
+          a {
+            font-size: 16px;
+            font-weight: 400;
+            font-family: 'Lato', sans-serif;
+            color: #181818;
+            padding: 10px 20px;
+            position: relative;
+            letter-spacing: 0.03em;
+            line-height: 1.5;
+
+            &.dropdown-toggle {
+              &::after {
+                margin-left: 10px;
+                content: '\f078';
+                border: 0;
+                vertical-align: initial;
+                font: normal normal normal 12px/1 FontAwesome;
+                transform: rotate(0deg);
+                transition: transform 0.3s ease-out;
+              }
+            }
+          }
+
+          &.active {
+            a {
+              &::before {
+                content: '';
+                background: $red;
+                height: 2px;
+                width: calc(100% - 40px);
+                position: absolute;
+                bottom: 0;
+              }
+            }
+          }
+
+          &.menu-item-has-children {
+            &:hover {
+              & > a {
+                &::after {
+                  transform: rotate(180deg);
+                  transition: transform 0.3s ease-out;
+                }
+              }
+              //Second ul inside first ul
+              & > ul {
+                pointer-events: painted;
+                opacity: 1;
+                z-index: 100;
+                transition: transform 0.4s ease-out, opacity 0.1s ease-out;
+                transform: translateY(0px);
+                li {
+                  a {
+                    &::before {
+                      display: none;
+                    }
+                  }
+                  &.menu-item-has-children {
+                    & > a {
+                      &::after {
+                        margin-left: 10px;
+                        content: '\f054';
+                        border: 0;
+                        vertical-align: initial;
+                        font: normal normal normal 12px/1 FontAwesome;
+                        transform: rotate(0deg) !important;
+                        transition: transform 0.3s ease-out;
+                        display: inline-block;
+                      }
+                    }
+                    &:hover {
+                      & > a {
+                        &::after {
+                          transform: rotate(180deg) !important;
+                          transition: transform 0.3s ease-out;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      // Second ul:
+
+      ul.dropdown-menu {
+        pointer-events: none;
+        display: block;
+        opacity: 1;
+        transition: transform 0.4s ease-out, opacity 0.1s ease-out;
+        transform: translateY(-10px);
+        left: 20px;
+        border: none;
+        background-color: #faf9f9;
+        border-radius: 0;
+        padding: 0;
+
+        @include media-breakpoint-up(lg) {
+          opacity: 0;
+        }
+
+        li {
+          a {
+            padding: 15px 30px 15px 15px;
+            color: rgb(153, 153, 153);
+            &::before {
+              display: none;
+            }
+            &:hover {
+              background-color: #181818;
+              color: #fff;
+
+              // third ul inside second ul
+              & + ul {
+                display: block;
+                transition: transform 0.4s ease-out, opacity 0.1s ease-out;
+                transform: translateX(0px);
+              }
+            }
+          }
+
+          // third ul:
+          ul {
+            top: 0;
+            transform: translateX(-10px);
+            max-height: 65vh;
+            overflow-y: auto;
+          }
+          &.active {
+            & > a {
+              background-color: #181818;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+
+    // Mobile view
+
+    #navbarNavDropdownMobile {
+      width: 100vw !important;
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      ul {
+        padding: 0;
+        border: none;
+        @include media-breakpoint-up(lg) {
+          max-height: calc(100vh - 300px);
+          overflow-y: auto;
+        }
+
+        li {
+          a {
+            font-size: 16px;
+            font-weight: 400;
+            font-family: 'Lato', sans-serif;
+            color: #181818;
+            padding: 15px 25px;
+            position: relative;
+            letter-spacing: 0.03em;
+            line-height: 1.5;
+            display: flex;
+            background: #f0f0f0;
+            border-top: 1px solid #ccc;
+            &::after {
+              display: none;
+            }
+            & + .new-span {
+              position: absolute;
+              top: 14px;
+              right: 15px;
+              text-align: center;
+              line-height: 1;
+              padding: 8px 10px;
+              cursor: pointer;
+              &.active {
+                i {
+                  &::before {
+                    content: '\f068';
+                  }
+                }
+              }
+            }
+          }
+          ul {
+            li {
+              a {
+                background: #faf9f9;
+              }
+              ul {
+                li {
+                  a {
+                    background: #fff;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
