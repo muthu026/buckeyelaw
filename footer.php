@@ -233,8 +233,10 @@ $bgimage = get_field('footer_top_bg_image', 'option');
                     </a>
                     <?php endif; ?>
                 </div>
-
-
+				
+<div class="marketed-by pt-2">
+ 
+</div>
             </div>
             <div class="col-12 d-block d-xl-none">
                 <p class="copy-right pt-5 text-white">

@@ -61,7 +61,9 @@ $bgimage = get_field('banner_image', 'term_' . $term_id);
                 ),
             ),
             'posts_per_page' => -1,
-            'orderby' => 'date',
+            'meta_key' => 'sort_order',
+ 			'meta_type' => 'NUMERIC',
+    		'orderby' => 'meta_value',
             'order' => 'ASC',
         );
 

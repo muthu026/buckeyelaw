@@ -264,6 +264,48 @@
             ]
         },
         {
+            "key": "field_67ab897b50439",
+            "label": "CLAI Section Title",
+            "name": "clai_section_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_67ab832cae1ea",
+            "label": "CLAI Pages List",
+            "name": "clai_pages_list",
+            "aria-label": "",
+            "type": "wysiwyg",
+            "instructions": "IMPORTANT: The items MUST be pasted in as bullet points (li) inside an UNORDERED BULLET LIST (ul). Do NOT paste as a table. If you need assistance please reach out to the Web Dev team.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "allow_in_bindings": 0,
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
             "key": "field_668594b9edfc4",
             "label": "Corporate Homepage Image",
             "name": "corporate_homepage_image",
@@ -408,5 +450,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1720781011
+    "modified": 1739295782
 }

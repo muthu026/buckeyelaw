@@ -21,6 +21,29 @@
             "selected": 0
         },
         {
+            "key": "field_670931ffc2eb8",
+            "label": "Sort Order",
+            "name": "sort_order",
+            "aria-label": "",
+            "type": "number",
+            "instructions": "The Sort Order on the Attorney's page.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": 1,
+            "min": 1,
+            "max": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "step": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_66868ace5f811",
             "label": "Name",
             "name": "name",
@@ -343,69 +366,6 @@
                     "parent_repeater": "field_66868efd21bbb"
                 },
                 {
-                    "key": "field_66a385905aefc",
-                    "label": "Office",
-                    "name": "office",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "25",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "parent_repeater": "field_66868efd21bbb"
-                },
-                {
-                    "key": "field_66a385a75aefd",
-                    "label": "Direct",
-                    "name": "direct",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "25",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "parent_repeater": "field_66868efd21bbb"
-                },
-                {
-                    "key": "field_66a385b95aefe",
-                    "label": "Cell",
-                    "name": "cell",
-                    "aria-label": "",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "25",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "maxlength": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "parent_repeater": "field_66868efd21bbb"
-                },
-                {
                     "key": "field_66868f6421bbe",
                     "label": "Phone",
                     "name": "phone",
@@ -452,17 +412,16 @@
                     "label": "Email",
                     "name": "email",
                     "aria-label": "",
-                    "type": "text",
-                    "instructions": "Multiple email use \" | \" this separation.",
+                    "type": "email",
+                    "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
                     "wrapper": {
-                        "width": "50",
+                        "width": "25",
                         "class": "",
                         "id": ""
                     },
                     "default_value": "",
-                    "maxlength": "",
                     "placeholder": "",
                     "prepend": "",
                     "append": "",
@@ -524,5 +483,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1721995775
+    "modified": 1728655912
 }
