@@ -424,3 +424,16 @@ $query = new WP_Query($args); ?>
 </div>
 <?php  } wp_reset_postdata();  } wp_die( ); }
 
+
+// Gravity Form Active Theme Name issues
+add_filter('gform_system_report', function ($report) {
+    
+    //Parent Name Modified by ChoiceLocal
+    if (isset($report[1]['tables'][1]['items'][1]['value'])) {
+        $report[1]['tables'][1]['items'][1]['value'] = 'by ChoiceLocal';
+        $report[1]['tables'][1]['items'][1]['value_export'] = 'by ChoiceLocal';
+    }
+
+    return $report;
+
+}, 10, 1);
